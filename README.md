@@ -55,10 +55,7 @@ chmod -R 755 public/uploads
 ```
 
 6. **Accéder à l'application**
-- Front-office : http://localhost/kib/public/
-- Back-office : http://localhost/kib/public/login
-  - Email : admin@kib.bf
-  - Mot de passe : admin123 ⚠️ À changer en production !
+
 
 ## 📁 Structure du projet
 
