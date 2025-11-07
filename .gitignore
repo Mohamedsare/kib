@@ -1,0 +1,20 @@
+# Fichiers de configuration sensibles
+config/database.php
+config/app.php
+
+# Dossiers d'upload
+public/uploads/
+
+# Sauvegardes
+backups/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Environnement virtuel
+vendor/
+
+# Logs
+*.log
+error_log

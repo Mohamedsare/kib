@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Rediriger toutes les requêtes vers le dossier public
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Bloquer l'accès direct aux fichiers sensibles
+<FilesMatch "^(\.htaccess|\.env|\.git|composer\.json|README\.md)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
